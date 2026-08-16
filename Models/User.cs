@@ -25,11 +25,10 @@ namespace E_Learning_Platform.Models
             [Required]
             public string Password { get; set; } = string.Empty;
 
-            [Column("phone")]
-            [MaxLength(15)]
-            public string? Phone { get; set; }
+           [Column("phone")]
+           public long? Phone { get; set; }
 
-            [Column("role")]
+           [Column("role")]
             public int Role { get; set; }
 
             [Column("created_at")]

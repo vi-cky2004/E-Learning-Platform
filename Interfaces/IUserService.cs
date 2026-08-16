@@ -4,7 +4,7 @@ namespace E_Learning_Platform.Interfaces
 {
     public interface IUserService
     {
-        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task<List<User>> GetAllUsersAsync();
 
         Task<User?> GetUserByIdAsync(int id);
 

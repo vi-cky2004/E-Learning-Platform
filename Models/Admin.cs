@@ -7,10 +7,15 @@ namespace E_Learning_Platform.Models
     public class Admin
     {
         [Key]
-        [Column("admin_id")]
         public int AdminId { get; set; }
-
-        [Column("user_id")]
         public int UserId { get; set; }
+
+        public string? Designation { get; set; }
+
+        public long? OfficePhone { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public DateTime CreatedAt { get; set; }
     }
 }

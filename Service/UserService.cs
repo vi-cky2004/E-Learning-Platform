@@ -12,7 +12,7 @@ namespace E_Learning_Platform.Service
             _repository = repository;
         }
 
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<List<User>> GetAllUsersAsync()
         {
             return await _repository.GetAllUsersAsync();
         }

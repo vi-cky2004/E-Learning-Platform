@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E_Learning_Platform.Models
 {
-    [Table("department")]
+    [Table("Department")]
     public class Department
     {
         [Key]
-        [Column("department_id")]
+        [Column("dept_id")]
         public int DepartmentId { get; set; }
 
-        [Column("department_name")]
+        [Column("dept_name")]
         public string DepartmentName { get; set; } = string.Empty;
     }
 }
